@@ -1,0 +1,25 @@
+//package com.famjam.notifiUtil.model;
+//
+//import java.time.LocalDateTime;
+//
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.GeneratedValue;
+//import jakarta.persistence.GenerationType;
+//import jakarta.persistence.Id;
+//
+//@Entity
+//public class Notifrequests {
+//
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Long id;
+//
+//    private String userId;      // Recipient
+//    private String message;
+//    private String type;        // e.g., INFO, ALERT, ERROR
+//    private boolean read = false;
+//
+//    private LocalDateTime timestamp = LocalDateTime.now();
+//
+//    // Getters and setters
+//}

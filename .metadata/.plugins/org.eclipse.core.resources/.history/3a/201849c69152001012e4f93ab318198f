@@ -1,0 +1,5 @@
+package com.famjam.notifiUtil.repo;
+
+public interface Notifyrepo {
+
+}

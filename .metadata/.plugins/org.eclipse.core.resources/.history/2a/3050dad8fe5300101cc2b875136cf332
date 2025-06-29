@@ -1,0 +1,37 @@
+services:
+  configserver:
+    image: ravishankark/configserver:v1
+    ports:
+      - "8080:8080"
+    networks:
+      - famjam
+      
+  todoutil:
+    image: ravishankark/todoutil:v1
+    ports:
+      - "8080:8080"
+    depends_on:
+      - configserver
+    networks:
+      - famjam
+    
+  jwtutil:
+    image: ravishankark/jwtutil:v1
+    ports:
+      - "8080:8080"
+    depends_on:
+      - configserver
+    networks:
+      - famjam
+      
+  notifiutil:
+    image: ravishankark/notifiutil:v1
+    ports:
+      - "8100:8100"
+    depends_on:
+      - configserver
+    networks:
+      - famjam
+      
+      
+      
